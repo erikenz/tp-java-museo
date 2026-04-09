@@ -13,6 +13,9 @@ Página para un museo virtual y presencial de artículos ficticios (procedentes 
 Los usuarios pueden ver los artículos  expuestos en la página, pueden buscarlos por categoría (videojuegos, anime, películas), pueden ver la información de las próximas exhibiciones (eventos donde se muestran presencialmente muchos artículos con algo en comun), como tambien ver informacion y sacar cupo para charlas (las charlas son presenciales sobre uno o varios artículos y tienen cupo limitado).
 El sistema tiene 3 tipos de usuarios, los administradores, los no registrados y los registrados(los registrados pueden anotarse a charlas).
 
+## Modelo
+
+[Imágen del Modelo](https://drive.google.com/file/d/1EivZI3NotmEKUSW2mmllVxYEebPuyomA/view?usp=sharing)
 
 ## Requerimientos
 
