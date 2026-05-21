@@ -32,7 +32,7 @@ El sistema tiene 3 tipos de usuarios, los administradores, los invitados y los r
 |Requerimiento|Detalle/Listado de casos incluidos|
 |:-|-:|
 |ABMC|Categoría, Usuario, Ubicación, Artículo, Evento, Entrada|
-|CU "Complejo"(nivel resumen)|Comprar entrada, Notificar evento|
+|CU "Complejo"(nivel resumen)|Comprar entrada, recordatorio evento en pagina, reseñar charla|
 |Listado complejo|Artículos por categoría, Evento por fecha, Evento por categoría, Evento por ubicación|
 |Nivel de acceso|Admin, Registrado, Invitado|
 |Manejo de errores|no requiere detalle|
