@@ -25,7 +25,7 @@ El sistema tiene 3 tipos de usuarios, los administradores, los invitados y los r
 |:-|-:|
 |ABMC simple|Categoría, Usuario, Ubicación|
 |ABMC dependiente|Artículo, Evento, Entrada|
-|CU NO-ABMC|Comprar entrada, Notificar evento|
+|CU NO-ABMC|Comprar entrada, recordatorio evento en pagina|
 
 ### Aprobación Directa
 
