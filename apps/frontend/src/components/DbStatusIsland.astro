@@ -1,0 +1,26 @@
+---
+// This code runs on the server at request time.
+let _status = "Checking...";
+let _message = "";
+
+try {
+    // Directly calling the backend API internally.
+    const response = await fetch("http://localhost:8080/api/v1/health");
+    if (response.ok) {
+        const data = await response.json();
+        _status = `Status: ${data.status}`;
+        _message = data.message;
+    } else {
+        _status = "Error";
+        _message = "Backend unreachable";
+    }
+} catch (_e) {
+    _status = "Offline";
+    _message = "Could not connect to database/backend";
+}
+---
+
+<div class="p-4 bg-gray-50 rounded-md">
+    <p class="font-bold">{_status}</p>
+    <p class="text-sm text-gray-700">{_message}</p>
+</div>

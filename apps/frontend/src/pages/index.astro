@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import DbStatusIsland from "../components/DbStatusIsland.astro";
+---
+
+<Layout title="Museo Dashboard">
+    <main class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold mb-6">Museo Dashboard</h1>
+
+        <div class="border rounded-lg p-6 shadow-sm">
+            <h2 class="text-xl font-semibold mb-4">Database & Backend Health</h2>
+            <!-- Server Island: This will be rendered on the server at runtime -->
+            <DbStatusIsland server:defer>
+                <div slot="fallback" class="text-gray-500">Connecting to database...</div>
+            </DbStatusIsland>
+        </div>
+    </main>
+</Layout>

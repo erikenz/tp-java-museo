@@ -1,0 +1,15 @@
+.gradle/
+build/
+bin/
+
+# Ignore Gradle Wrapper jar but keep the script
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE files
+.settings/
+.project
+.classpath
+*.iml
+*.ipr
+*.iws
+.nb-gradle/
