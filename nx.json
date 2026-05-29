@@ -2,9 +2,7 @@
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "namedInputs": {
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
-    "production": [
-      "default"
-    ],
+    "production": ["default"],
     "sharedGlobals": []
   },
   "targetDefaults": {
@@ -21,12 +19,5 @@
       "cache": false
     }
   },
-  "plugins": [
-    {
-      "plugin": "@nx/gradle",
-      "options": {
-        "rootDirectory": "apps/backend"
-      }
-    }
-  ]
+  "plugins": []
 }

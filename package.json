@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "nx run-many --target=dev --parallel=true",
-    "dev:all": "concurrently -n \"BACKEND,FRONTEND\" -c \"green,blue\" \"nx run backend:dev\" \"nx run frontend:dev\"",
+    "dev:all": "docker-compose up -d && concurrently -n \"BACKEND,FRONTEND\" -c \"green,blue\" \"nx run backend:dev\" \"nx run frontend:dev\" --kill-others --success first; docker-compose down",
     "build": "nx run-many --target=build",
     "test": "nx run-many --target=test",
     "format": "biome format --write .",

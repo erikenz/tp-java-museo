@@ -1,15 +1,24 @@
-import tailwind from "@astrojs/tailwind";
-import { defineConfig } from "astro/config";
+import tailwindcss from '@tailwindcss/vite';
+import { defineConfig } from 'astro/config';
+
+import node from '@astrojs/node';
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [tailwind()],
-	server: {
-		proxy: {
-			"/api": {
-				target: "http://localhost:8080",
-				changeOrigin: true,
-			},
-		},
-	},
+  vite: {
+    plugins: [tailwindcss()],
+  },
+
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+      },
+    },
+  },
+
+  adapter: node({
+    mode: 'standalone',
+  }),
 });
