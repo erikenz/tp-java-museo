@@ -7,12 +7,22 @@ import DbStatusIsland from "../components/DbStatusIsland.astro";
     <main class="container mx-auto p-4">
         <h1 class="text-3xl font-bold mb-6">Museo Dashboard</h1>
 
-        <div class="border rounded-lg p-6 shadow-sm">
-            <h2 class="text-xl font-semibold mb-4">Database & Backend Health</h2>
-            <!-- Server Island: This will be rendered on the server at runtime -->
-            <DbStatusIsland server:defer>
-                <div slot="fallback" class="text-gray-500">Connecting to database...</div>
-            </DbStatusIsland>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="border rounded-lg p-6 shadow-sm">
+                <h2 class="text-xl font-semibold mb-4">Database & Backend Health</h2>
+                <!-- Server Island: This will be rendered on the server at runtime -->
+                <DbStatusIsland server:defer>
+                    <div slot="fallback" class="text-gray-500">Connecting to database...</div>
+                </DbStatusIsland>
+            </div>
+
+            <div class="border rounded-lg p-6 shadow-sm bg-blue-50">
+                <h2 class="text-xl font-semibold mb-4 text-blue-800">Management</h2>
+                <p class="mb-4 text-blue-700">Manage your museum's data and categories.</p>
+                <a href="/categories" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition-colors">
+                    Manage Categories
+                </a>
+            </div>
         </div>
     </main>
 </Layout>
