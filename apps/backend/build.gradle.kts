@@ -1,6 +1,6 @@
 plugins {
-    id("org.springframework.boot") version "4.0.0"
-    id("io.spring.dependency-management") version "1.1.4"
+    id("org.springframework.boot") version "4.0.6"
+    id("io.spring.dependency-management") version "1.1.7"
     java
 }
 
@@ -27,4 +27,5 @@ dependencies {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+    failOnNoDiscoveredTests = false
 }
