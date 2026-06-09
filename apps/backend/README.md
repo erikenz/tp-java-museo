@@ -36,7 +36,7 @@ src/main/java/com/museo/
 Con Docker:
 
 ```bash
-docker-compose up -d
+pnpm --filter @museo/services up
 ```
 
 Esto levanta PostgreSQL en `localhost:5432`, base `museo`.

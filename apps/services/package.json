@@ -1,0 +1,12 @@
+{
+  "name": "@museo/services",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "docker compose up",
+    "dev:teardown": "pnpm run down",
+    "down": "docker compose down",
+    "stop": "docker compose stop",
+    "up": "docker compose up --wait"
+  }
+}
